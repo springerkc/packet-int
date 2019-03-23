@@ -7,18 +7,12 @@ import { Component } from '@angular/core';
 })
 export class NavMenuComponent {
   menuOpen = false;
-  dropMenu = false;
 
   close() {
     this.menuOpen = false;
-    this.dropMenu = false;
   }
 
   toggleMenu() {
     this.menuOpen = !this.menuOpen;
-  }
-
-  toggleDropMenu() {
-    this.dropMenu = !this.dropMenu;
   }
 }

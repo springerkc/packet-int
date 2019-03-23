@@ -4,10 +4,10 @@
       <div class="site-title">Packet Interview App</div>
       <ul class="nav-list">
         <div class="close" (click)='close()'><span>X</span></div>
-        <li><a href routerLink="/" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active" (click)='close()'>Home</a></li>
+        <li><a href routerLink="/" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active" (click)='close()'>Dashboard</a></li>
+        <li><a href routerLink="/projects" routerLinkActive="active" (click)='close()'>Projects</a></li>
         <li><a href routerLink="/devices" routerLinkActive="active" (click)='close()'>Devices</a></li>
-        <li><a href routerLink="/more" routerLinkActive="active" (click)='close()'>More</a></li>
-        <li><a href routerLink="/help" routerLinkActive="active" (click)='close()'>Help</a></li>
+        <li><a href routerLink="/users" routerLinkActive="active" (click)='close()'>Users</a></li>
       </ul>
     </div>
     <div class="hamburger" (click)='toggleMenu()'><span></span><span></span><span></span></div>

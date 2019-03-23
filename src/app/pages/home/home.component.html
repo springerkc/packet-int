@@ -1,6 +1,29 @@
-<section class="content af-landing">
+<section class="content dashboard">
   <div class="container">
-    <h1>Home Page</h1>
-    <input type="button" value="get users" (click)='getProjectDevices()' />
+    <div class="page-header">
+      <h1>Welcome back interviewer!</h1>
+      <h3>I hope you like what I've done with the place.</h3>
+    </div>
+    <h2 class="section-header">Current Resources</h2>
+    <div class="stats">
+      <div class="circle-card" *ngIf="projects.projects">
+        <a class="name" routerLink="/projects">
+          <span class="number" [innerHtml]="projects.projects.length"></span>
+          PROJECTS
+        </a>
+      </div>
+      <div class="circle-card">
+        <a class="name" routerLink="/devices">
+          <span class="number" [innerHtml]="devicesTotal"></span>
+          DEVICES
+        </a>
+      </div>
+      <div class="circle-card">
+        <a class="name" routerLink="/users">
+          <span class="number" [innerHtml]="usersTotal"></span>
+          USERS
+        </a>
+      </div>
+    </div>
   </div>
 </section>

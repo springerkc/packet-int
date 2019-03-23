@@ -2,6 +2,7 @@
 section.content {
   display:flex;
   justify-content:center;
+  min-height: 100vh;
 }
 .container {
   display: flex;
@@ -37,8 +38,10 @@ div.table {
   display:flex;
   flex-flow:column;
   width:100%;
+  margin:25px 0 25px 0;
   div.table-row {
     display:flex;
+    background:none;
     width:100%;
     div.table-cell {
       flex:1;
@@ -46,6 +49,7 @@ div.table {
       justify-content:center;
       align-items:center;
       width:calc(16.6666666667% - 200px);
+      height:45px;
       word-break:break-all;
       text-align:center;
       padding:0 8px 0 8px;
@@ -62,17 +66,11 @@ div.table {
       flex:none;
       padding:0 0 0 0;
     }
-    &:nth-child(odd) {
-      background:#9a9a9a;
-      div.table-cell:first-child {
-        border-top:1px solid #8c8c8c;
-      }
-    }
   }
   div.table-header {
-    background:none !important;
+    background:#242e3c;
+    color:#fafafa;
     border-bottom:1px solid #8c8c8c;
-    height:60px;
   }
 }
 section.first-body-section {
@@ -110,21 +108,24 @@ div.page-header {
   h1 {
     font-size:28px;
     font-weight:400;
+    text-align:center;
   }
   h3 {
     font-size:22px;
     font-weight:300;
     margin:0 0 5px 0;
-  }
-  div.hor-dog {
-    width:100%;
-    height:3px;
-    background:#9a9a9a;
+    text-align:center;
   }
   @media (min-width:992px) {
     align-items:flex-start;
-    h1 { font-size: 36px; }
-    h3 { font-size:26px; }
+    h1 {
+      font-size: 36px;
+      text-align:left;
+    }
+    h3 {
+      font-size:26px;
+      text-align:left;
+    }
   }
 }
 .no-border { border:none !important; }
