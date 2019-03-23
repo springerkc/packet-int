@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent, ProjectsComponent } from './pages';
+import { HomeComponent, ProjectsComponent, DevicesComponent, UsersComponent } from './pages';
 import { ProjectsResolver } from './core';
 
 const routes: Routes = [
@@ -12,6 +12,8 @@ const routes: Routes = [
     path: 'projects', component: ProjectsComponent,
     resolve: { projects: ProjectsResolver },
   },
+  { path: 'devices', component: DevicesComponent },
+  { path: 'users', component: UsersComponent },
 ];
 
 @NgModule({

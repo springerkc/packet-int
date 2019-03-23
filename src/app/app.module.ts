@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AuthInterceptor, DevicesService, ProjectsService, ProjectsResolver } from './core';
 import { AppComponent } from './root/app.component';
 import { NavMenuComponent, FooterComponent } from './components';
-import { HomeComponent, ProjectsComponent } from './pages';
+import { HomeComponent, ProjectsComponent, DevicesComponent, UsersComponent } from './pages';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,9 @@ import { HomeComponent, ProjectsComponent } from './pages';
     NavMenuComponent,
     FooterComponent,
     HomeComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    DevicesComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
