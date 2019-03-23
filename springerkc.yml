@@ -1,0 +1,68 @@
+about:
+  name: Jordan Springer
+  location: Kansas City, MO
+  timezone: UTC-06
+  hobbies:
+    - "Mountain biking"
+    - "Music"
+    - "My Truck"
+    - "Family"
+    - "Action Sports"
+  favorite_resources:
+    - "Google News Feed"
+    - "Pluralsight"
+    - "Stackoverflow"
+    - "Quora"
+    - "YouTube"
+    - "Look back at history"
+# be a mentor
+bam:
+  skills:
+    - Stupid fast at learning new things
+    - Working smarter, not harder
+    - Thinking outside the box
+    - Getting the job done fast, efficiently, and of high quality
+  languages/paradigms:
+    # Specify ['what', level], level 1-10 (1 being justed learned, 10 you can give a talk about it)
+    - [JavaScript, 6]
+    - [C#, 6]
+    - [HTML, 6]
+    - [CSS/less/Scss, 6]
+    - [TypeScript, 6]
+    - [NodeJS, 6]
+    - [ASP.NET Core, 6]
+    - [SQL, 5]
+    - [SOLID, 5]
+    - [MongoDB, 4]
+    - [ExtremeProgramming, 1]
+  frameworks/libraries/concepts:
+    # list in order of most recent
+    - Angular 5+ 
+    - express.js
+    - Mocha, Chai, Karma, Protractor, and Wallaby.js
+    - ES/TS lint
+    - nodemon
+    - EJS
+    - oidc-client
+    - OAuth
+    - Knockout.js
+    - AngularJS
+    - jQuery
+# seek a mentor
+sam:
+  skills:
+    - Communicate what I understand, not communicating what I hear
+    - TDD and e2e testing
+    - DevOps
+  languages/paradigms:
+    - Go or Swift
+    - Ruby on Rails
+    - Pyhton
+    - PHP
+  frameworks/libraries/concepts:
+    - TDD
+    - React
+    - React Native
+    - passport
+    - rxjs
+    - CI/CD for deployments
