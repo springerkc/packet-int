@@ -11,4 +11,9 @@ export class ProjectsService {
   getAllProjects(): Observable<Projects> {
     return this.httpClient.get<Projects>(`${Constants.apiRoot}projects`);
   }
+
+  // no access 403?
+  // getProjectsBasic() {
+  //   return this.httpClient.get(`${Constants.apiRoot}user?include=projects`);
+  // }
 }

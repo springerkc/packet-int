@@ -14,7 +14,6 @@ export class ProjectsComponent {
     this._route.data.subscribe((data: any) => {
       if (data && data.projects && data.projects.projects) {
         this.projects = data.projects as Projects;
-        console.log(this.projects);
       }
     });
   }

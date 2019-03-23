@@ -11,8 +11,8 @@
       <div class="table-row" *ngFor="let project of projects.projects">
         <div class="table-cell" [innerHtml]="project.created_at | date:'short'"></div>
         <div class="table-cell" [innerHtml]="project.name"></div>
-        <div class="table-cell"><a routerLink="/devices">{{project.devices.length}}</a></div>
-        <div class="table-cell"><a routerLink="/users">{{project. members.length}}</a></div>
+        <div class="table-cell"><a routerLink="/devices/{{project.id}}">{{project.devices.length}} device{{project.devices.length >= 2 ? 's' : ''}}</a></div>
+        <div class="table-cell"><a routerLink="/users">{{project. members.length}} user{{project.members.length >= 2 ? 's' : ''}}</a></div>
         <div class="table-cell" [innerHtml]="project.updated_at | date:'short'"></div>
       </div>
     </div>

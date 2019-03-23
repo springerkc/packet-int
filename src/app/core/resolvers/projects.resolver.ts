@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
 import { Resolve } from '@angular/router';
-import { Projects } from '../models/projects.model';
 import { Observable } from 'rxjs';
+import { Projects } from '../models/projects.model';
 import { ProjectsService } from '../services/projects.service';
 
 @Injectable()
 export class ProjectsResolver implements Resolve<Projects> {
-  constructor(private _projetcsService: ProjectsService) {}
+  constructor(private _projectsService: ProjectsService) {}
 
   resolve(): Observable<Projects> {
-    return this._projetcsService.getAllProjects();
+    return this._projectsService.getAllProjects();
   }
 }

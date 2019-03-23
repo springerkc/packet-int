@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent, ProjectsComponent, DevicesComponent, UsersComponent } from './pages';
-import { ProjectsResolver } from './core';
+import { HomeComponent, ProjectsComponent, DevicesListComponent, UsersComponent } from './pages';
+import { ProjectsResolver, DevicesResolver } from './core';
 
 const routes: Routes = [
   {
@@ -12,7 +12,14 @@ const routes: Routes = [
     path: 'projects', component: ProjectsComponent,
     resolve: { projects: ProjectsResolver },
   },
-  { path: 'devices', component: DevicesComponent },
+  {
+    path: 'devices', component: DevicesListComponent,
+    resolve: { devices: DevicesResolver, projects: ProjectsResolver },
+  },
+  {
+    path: 'devices/:project_id', component: DevicesListComponent, pathMatch: 'full',
+    resolve: { devices: DevicesResolver, projects: ProjectsResolver },
+  },
   { path: 'users', component: UsersComponent },
 ];
 
